@@ -53,6 +53,7 @@
 .newsponsor__vid {
   height:22rem;
   width:30rem;
+  position: relative;
  
 }
 @media screen and (max-width: 600) {
@@ -63,14 +64,20 @@
     max-width: 75% !important;
     flex: 0 0 75% !important;
   }
+  .newsponsor__card__inner {
+    background: #3f9ebe;
+    transition: all ease-in-out 0.3s;
+    height: 24rem;
+  }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1000px) {
   .newsponsor__content {
     max-width: 100% !important;
     flex: 0 0 100% !important;
   }
-}
-
+  .newsponsor__vid {
+    opacity: 0.0;
+  }
 .card__actions {
   display: flex;
 }
@@ -78,9 +85,11 @@
   margin: 0 0.5rem;
 }
 
-@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1380px) {
   #newsponsor-button a {
-    font-size: 1.25rem;
+    font-size: 1.10rem;
     padding: 0.75rem 1.2rem;
   }
 
@@ -96,6 +105,9 @@
   }
 
   .newsponsor__vid {
-    opacity: 0.1;
+   
+  width:45%;
+  
   }
+ 
 }
