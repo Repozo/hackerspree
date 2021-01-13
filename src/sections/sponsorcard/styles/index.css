@@ -64,11 +64,6 @@
     max-width: 75% !important;
     flex: 0 0 75% !important;
   }
-  .newsponsor__card__inner {
-    background: #3f9ebe;
-    transition: all ease-in-out 0.3s;
-    height: 24rem;
-  }
 }
 @media screen and (max-width: 1000px) {
   .newsponsor__content {
