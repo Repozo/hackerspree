@@ -20,7 +20,6 @@ const DiscordCard = (props) => {
               Become a part of our community to join discussions regarding
               trending technologies and get latest updates about Hackathons.
             </p>
-
             <div id="discord-button">
               <a href="" target="_blank">
                 <div class="icon">

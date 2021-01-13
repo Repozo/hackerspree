@@ -33,7 +33,7 @@
 .newsponsor__card__inner {
   background: #3f9ebe;
   transition: all ease-in-out 0.3s;
-  height: auto !important;
+  height: 22rem;
 }
 
 .newsponsor__content {
@@ -51,9 +51,10 @@
 }
 
 .newsponsor__vid {
-  height: 100%;
+  height:22rem;
+  width:30rem;
+ 
 }
-
 @media screen and (max-width: 600) {
   .newsponsor__vid {
     opacity: 0.1;
