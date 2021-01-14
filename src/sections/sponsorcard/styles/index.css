@@ -33,7 +33,7 @@
 .newsponsor__card__inner {
   background: #3f9ebe;
   transition: all ease-in-out 0.3s;
-  height: 22rem;
+  height: 100%;
 }
 
 .newsponsor__content {
@@ -51,35 +51,10 @@
 }
 
 .newsponsor__vid {
-  height:22rem;
-  width:30rem;
+  
+  width:50%;
   position: relative;
  
-}
-@media screen and (max-width: 600) {
-  .newsponsor__vid {
-    opacity: 0.1;
-  }
-  .newsponsor__content {
-    max-width: 75% !important;
-    flex: 0 0 75% !important;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .newsponsor__content {
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
-  }
-  .newsponsor__vid {
-    opacity: 0.0;
-  }
-.card__actions {
-  display: flex;
-}
-.card__actions > * {
-  margin: 0 0.5rem;
-}
-
 }
 
 @media screen and (max-width: 1380px) {
@@ -104,5 +79,45 @@
   width:45%;
   
   }
+  .newsponsor__card__inner {
+    background: #3f9ebe;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
  
 }
+
+@media screen and (max-width: 1000px) {
+  .newsponsor__content {
+    max-width: 55% !important;
+    flex: 0 0 55% !important;
+  }
+  
+.card__actions {
+  display: flex;
+}
+.card__actions > * {
+  margin: 0 0.5rem;
+}
+.newsponsor__card__inner {
+  background: #3f9ebe;
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+}
+@media screen and (max-width: 515px) {
+  .newsponsor__vid {
+    display:none;
+  }
+  .newsponsor__content {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .newsponsor__card__inner {
+    background: #3f9ebe;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+}
+
+

@@ -31,7 +31,7 @@
 .discord__card__inner {
   background: #869be1;
   transition: all ease-in-out 0.3s;
-  height: 18rem;
+  height: 100%;
 }
 
 .discord__content {
@@ -52,34 +52,97 @@
 }
 
 .discord__vid {
-  height:18rem;
-  width:30rem;
+  
+  width:50%;
  
 }
+@media screen and (max-width: 1380px) {
+  .discord__content{
+    max-width: 48% !important;
+    flex: 0 0 48% !important;
+}
+  .discord__card__inner {
+    background: #869be1;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  
+}
 @media screen and (max-width:1000px){
-    .discord__vid{
-        opacity: 0.0;
-    }
+    
     .discord__content{
-        max-width: 75% !important;
-        flex: 0 0 75% !important;
+        max-width: 52% !important;
+        flex: 0 0 52% !important;
+    }
+    .discord__vid {
+      
+      width:45%;
+    position: absolute;
+    left:50%;
+    top:5%;
+    }
+    .discord__card__inner {
+      background: #869be1;
+      transition: all ease-in-out 0.3s;
+      height: 100%;
     }
 }
-@media screen and (max-width:720px){
+@media screen and (max-width:830px){
+  
+    .discord__content{
+        max-width: 55% !important;
+        flex: 0 0 55% !important;
+    }
+    .discord__card__inner {
+      background: #869be1;
+      transition: all ease-in-out 0.3s;
+      height: 100%;
+    }
+    .discord__vid {
+      
+      width:45%;
+      
+    }
+}
+@media screen and (max-width:515px){
+  
+  .discord__content{
+      max-width: 100% !important;
+      flex: 0 0 100% !important;
+  }
+  .discord__card__inner {
+    background: #869be1;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  .discord__vid{
+    display: none;
+}
+}
+@media screen and (max-width:360px){
   .discord__vid{
     opacity: 0.1;
 }
     .discord__content{
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
+        max-width: 90% !important;
+        flex: 0 0 90% !important;
+    }
+    .discord__card__inner {
+      background: #869be1;
+      transition: all ease-in-out 0.3s;
+      height: 24rem;
+    }
+    #discord-button a {
+      color: #7289da;
+      font-weight: bold;
+      border-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: white;
+      text-decoration: none;
+      transition: all ease-in 0.3s;
+      font-size: 1rem;
     }
 }
-@media screen and (max-width: 1380px) {
-  
 
-  .discord__vid {
-   
-  width:45%;
-  
-  }
-}
