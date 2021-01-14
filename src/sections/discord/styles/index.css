@@ -38,6 +38,9 @@
   padding: 2rem 1.5rem;
   color: white;
   z-index: 4;
+  max-width: 58% !important;
+  flex: 0 0 58% !important;
+
 }
 .discord__content h3 {
   font-size: 2rem;
@@ -53,19 +56,47 @@
 
 .discord__vid {
   
-  width:50%;
+  
+  width:30%;
+ 
   object-fit: fill;
  
 }
-@media screen and (max-width: 1380px) {
+@media screen and (max-width: 1400px) {
   .discord__content{
-    max-width: 48% !important;
-    flex: 0 0 48% !important;
+    max-width: 58% !important;
+    flex: 0 0 58% !important;
 }
   .discord__card__inner {
     background: #869be1;
     transition: all ease-in-out 0.3s;
     height: 100%;
+    
+  }
+  .discord__vid {
+  
+    width:35%;
+   
+  }
+  
+}
+
+@media screen and (max-width: 1280px) {
+  .discord__content{
+    max-width: 58% !important;
+    flex: 0 0 58% !important;
+}
+  .discord__card__inner {
+    background: #869be1;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+    
+  }
+  .discord__vid {
+  
+    width:40%;
+
+   
   }
   
 }
@@ -79,7 +110,7 @@
       
       width:45%;
       
-    
+     
     }
     .discord__card__inner {
       background: #869be1;
@@ -101,7 +132,6 @@
     .discord__vid {
       
       max-width:45%;
-      
       
     }
 }

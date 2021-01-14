@@ -1,3 +1,4 @@
+
 #newsponsor-button .icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -19,6 +20,7 @@
   text-decoration: none;
   transition: all ease-in 0.3s;
   font-size: 1.25rem;
+  margin: 0.5rem;
 }
 
 #newsponsor-button a:hover {
@@ -113,6 +115,7 @@
   .newsponsor__vid {
     display:none;
   }
+  
   .newsponsor__content {
     max-width: 100% !important;
     flex: 0 0 100% !important;
