@@ -53,20 +53,48 @@
 
 .discord__vid {
   height: 100%;
+  width: 315px;
+  position: absolute;
+  top: 0;
+  right: 17px;
+  width: auto;
+  opacity: 1;
+  z-index: 0;
 }
 
-@media screen and (max-width:960px){
-    .discord__vid{
-        opacity: 0.1;
-    }
-    .discord__content{
-        max-width: 75% !important;
-        flex: 0 0 75% !important;
-    }
+.row.discord_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
 }
-@media screen and (max-width:720px){
-    .discord__content{
-        max-width: 100% !important;
-        flex: 0 0 100% !important;
-    }
+
+@media screen and (max-width: 600px) {
+  .discord_video {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .discord_video {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .discord__vid {
+    opacity: 0.1;
+  }
+  .discord__content {
+    max-width: 75% !important;
+    flex: 0 0 75% !important;
+  }
+}
+@media screen and (max-width: 720px) {
+  .discord__content {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
 }
