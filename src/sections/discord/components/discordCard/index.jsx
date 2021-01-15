@@ -13,7 +13,7 @@ const DiscordCard = (props) => {
         className="card__content__inner Tilt-inner discord__card__inner"
         style={{ backgroundColor: props.color, scale: 1 }}
       >
-        <div className="row">
+        <div className="row discord_card">
           <div className="col-md-6 align-items-start discord__content">
             <h3>Let's Get Connected !</h3>
             <p>
@@ -43,15 +43,21 @@ const DiscordCard = (props) => {
               </a>
             </div>
           </div>
-          <video
-            className="card__graphics discord__vid lazy"
-            autoPlay={true}
-            loop={true}
-            muted={true}
-            playsInline={true}
-          >
-            <source data-src="images/discord.webm" type="video/webm" className="lazy"/>
-          </video>
+          <div className="discord_video">
+            <video
+              className="card__graphics discord__vid lazy"
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+            >
+              <source
+                data-src="images/discord.webm"
+                type="video/webm"
+                className="lazy"
+              />
+            </video>
+          </div>
         </div>
       </div>
     </Tilt>

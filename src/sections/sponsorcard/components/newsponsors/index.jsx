@@ -11,7 +11,7 @@ const NewSponsors = (props) => {
         className="card__content__inner Tilt-inner newsponsor__card__inner"
         style={{ backgroundColor: props.color, scale: 1 }}
       >
-        <div className="row">
+        <div className="row newsponsor">
           <div className="col-md-9 col-lg-6 col-sm-12 align-items-start newsponsor__content">
             <h3>Want to sponsor Hackerspree ?</h3>
             <p>
@@ -45,11 +45,7 @@ const NewSponsors = (props) => {
               </div>
 
               <div id="newsponsor-button">
-                <a
-                  href=""
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="" target="_blank" rel="noreferrer">
                   <div
                     className="icon"
                     style={{ height: "1.25rem", width: "1.25rem" }}
@@ -75,12 +71,14 @@ const NewSponsors = (props) => {
               </div>
             </div>
           </div>
-          <img
-            src=""
-            data-src="images/bg.jpg"
-            className="card__graphics newsponsor__vid lazy"
-            alt="New Sponsors Hackerspree"
-          />
+          <div className="newsponsor__image">
+            <img
+              src="../../../../../public/images/bg.jpg"
+              data-src="images/bg.jpg"
+              className="card__graphics newsponsor__vid lazy"
+              alt="New Sponsors Hackerspree"
+            />
+          </div>
         </div>
       </div>
     </Tilt>
