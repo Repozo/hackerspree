@@ -18,8 +18,17 @@
   padding: 1.25rem 0;
   color: var(--text-tertiary);
 }
+body.dark-mode .sponsor-tier-title {
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1.25rem 0;
+  color: white;
+}
 
-
+body.dark-mode .col-md-10
+{
+  color: white;
+}
 .sponsors {
   display: flex;
   /* justify-content: center; */

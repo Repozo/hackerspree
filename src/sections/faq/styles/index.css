@@ -7,3 +7,11 @@
 	margin: 0rem 1rem;
 	/* background-color: var(--bg-secondary); */
 }
+body.dark-mode .faq-row-wrapper
+{
+	background-color:rgb(49, 49, 49) !important;
+}
+body.dark-mode .row-title-text
+{
+	color: white;
+}

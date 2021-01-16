@@ -119,3 +119,7 @@
     margin-left: 1rem;
   }
 }
+body.dark-mode rect
+{
+  fill:rgb(49, 49, 49) !important;
+}

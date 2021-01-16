@@ -29,12 +29,20 @@
 img {
   display: block;
 }
-body {
+body.light-mode {
   margin: 0;
   padding: 0;
   background: var(--bg-primary);
   scroll-behavior: smooth;
 }
+body.dark-mode {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(49, 49, 49) !important;
+  scroll-behavior: smooth;
+  color: white;
+}
+
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -76,4 +84,39 @@ main {
 
 section {
   padding: 2rem 0;
+}
+.dark-mode-toggle {
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.toggle-control {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  
+}
+
+input[type='checkbox'].dmcheck {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+
+ 
+}
+.toggle-btn
+{
+position: absolute;
+top: 0;
+right: 0;
 }

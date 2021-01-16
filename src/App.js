@@ -1,7 +1,7 @@
 // Shared Components
 import Sidebar from "./shared_components/sidebar";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import DarkModeToggle from './DarkModeToggle';
 // Router
 import {
   BrowserRouter as Router,
@@ -38,8 +38,11 @@ function App() {
 const Home = () => {
   return (
     <>
+    <div className="toggle-btn">
+     <DarkModeToggle/>
+     </div>
       <Sidebar />
-
+     
       <main>
         <Landing />
 
