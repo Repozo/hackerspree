@@ -111,7 +111,13 @@ body.dark-mode .landing__actions .secondary__btn {
 .landing__actions .secondary__btn:focus {
   background: var(--focused-state);
 }
-
+body.dark-mode .fa-calendar-alt:before
+{
+  color:rgb(228, 225, 225);
+}
+body.dark-mode .fa-globe:before
+{color:rgb(228, 225, 225);
+}
 @media screen and (max-width: 1120px) {
   .landing__content {
     padding: 0rem 2.5rem;
