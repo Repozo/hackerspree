@@ -19,13 +19,29 @@
   color: var(--text-tertiary);
   font-weight: 400;
 }
-.landing__date {
+body.light-mode .landing__date {
   display: flex;
   align-items: center;
   margin-left: 2rem;
   font-size: 1.2rem;
   color: var(--text-tertiary);
   font-weight: 500;
+}
+body.dark-mode .landing__date {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}
+body.dark-mode .landing_heading 
+{
+  color:white;
+}
+body.dark-mode .landing__description
+{
+  color:white;
 }
 .landing__date i {
   color: #0000008a;
@@ -69,7 +85,7 @@
 .landing__actions .primary__btn:focus {
   filter: brightness(0.75);
 }
-.landing__actions .secondary__btn {
+body.light-mode .landing__actions .secondary__btn {
   padding: 0.5rem 1rem;
   border: 1.5px solid var(--btn-primary);
   border-radius: 5px;
@@ -79,14 +95,29 @@
   color: var(--btn-primary);
   transition: var(--transition-speed);
 }
-
+body.dark-mode .landing__actions .secondary__btn {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--btn-primary);
+  border-radius: 5px;
+  text-align: center;
+  background-color:rgb(49, 49, 49) !important;
+  outline: none;
+  color: var(--btn-primary);
+  transition: var(--transition-speed);
+}
 .landing__actions .secondary__btn:hover {
   background: var(--hover-state);
 }
 .landing__actions .secondary__btn:focus {
   background: var(--focused-state);
 }
-
+body.dark-mode .fa-calendar-alt:before
+{
+  color:rgb(228, 225, 225);
+}
+body.dark-mode .fa-globe:before
+{color:rgb(228, 225, 225);
+}
 @media screen and (max-width: 1120px) {
   .landing__content {
     padding: 0rem 2.5rem;

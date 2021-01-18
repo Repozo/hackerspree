@@ -1,5 +1,9 @@
-.about__section {
-  background: var(--bg-secondary);
+body.light-mode .about__section {
+  background-color:white;
+  overflow-x: hidden;
+}
+body.dark-mode .about__section {
+  background-color:rgb(49, 49, 49) !important;;
   overflow-x: hidden;
 }
 .about__img {
@@ -103,6 +107,10 @@
   font-weight: 600;
 }
 
+body.dark-mode .about_text
+{
+  color:white;
+}
 @media screen and (max-width: 1120px) {
   .about__content {
     padding: 0rem 2.5rem;
@@ -222,7 +230,16 @@ blue {
   color: var(--btn-primary);
   transition: var(--transition-speed);
 }
-
+body.dark-mode .secondary__btn {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--btn-primary);
+  border-radius: 5px;
+  text-align: center;
+  background-color:rgb(49, 49, 49) ;
+  outline: none;
+  color: var(--btn-primary);
+  transition: var(--transition-speed);
+}
 .secondary__btn:disabled{
   cursor: not-allowed;
 }

@@ -25,7 +25,7 @@ const Faq = () => {
             <ReactFAQ
               data={data}
               styles={{
-                // bgColor: "#f5f5f5",
+                 bgColor: "#f5f5f5",
                 titleTextColor: "black",
                 rowTitleColor: "black",
                 rowTitleTextSize: "1.1rem",

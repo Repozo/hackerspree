@@ -29,12 +29,20 @@
 img {
   display: block;
 }
-body {
+body.light-mode {
   margin: 0;
   padding: 0;
   background: var(--bg-primary);
   scroll-behavior: smooth;
 }
+body.dark-mode {
+  margin: 0;
+  padding: 0;
+  background-color:rgb(49, 49, 49) !important;
+  scroll-behavior: smooth;
+  color: white;
+}
+
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -60,6 +68,69 @@ main {
   color: var(--text-tertiary);
 }
 
+
+
+section {
+  padding: 2rem 0;
+}
+.dark-mode-toggle {
+  display: flex;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.toggle-control {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.dmcheck {
+  -webkit-appearance: none;
+  position: relative;
+  width: 4vw;
+  height: 2vw;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
+  border-radius: 50px;
+  outline: none;
+  transition: background-image .90s;
+  box-shadow: 0px 2px 5px 1px gray;
+  z-index: 999;
+}
+
+.dmcheck:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2vw;
+  width: 2vw;
+  background-color: navy;
+  border-radius: 50px;
+  transition: all .9s;
+  background-color: #F7CA33;
+}
+
+.dmcheck:checked {
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  transition: background-image .90s;
+
+}
+
+.dmcheck:checked:before {
+  transform: translate(100%);
+  transition: all .9s;
+  background-color: #ECF0F3;
+}
+.toggle-btn
+{
+position: absolute;
+top: 1vw;
+right: 0;
+}
 /* Mobile Screens */
 @media only screen and (max-width: 600px) {
   main {
@@ -72,8 +143,23 @@ main {
     font-size: 1.5rem;
     /* text-align: center; */
   }
-}
+  .dmcheck {
 
-section {
-  padding: 2rem 0;
+    width: 30px;
+    height: 15px;
+  
+  }
+  
+  .dmcheck:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: navy;
+    border-radius: 50px;
+    transition: all .9s;
+    background-color: #F7CA33;
+  }
 }

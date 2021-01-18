@@ -15,7 +15,7 @@ const About = () => {
           <h3 className="hackerspree-header">
             <green>About</green>
           </h3>
-          Helping students to give the closure of Networking and Exposure.
+          <div className="about_text">Helping students to give the closure of Networking and Exposure.</div>
           <div className="typed-content mt-3 mb-5">
             <Typed
               className="about-typer"
@@ -34,7 +34,7 @@ const About = () => {
           </div>
           <div className="about-text">
             <p className="mb-3">
-              More About
+              <div className="about_text">More About</div>
             </p>
 
             <Link to="http:/dscjiit.live">

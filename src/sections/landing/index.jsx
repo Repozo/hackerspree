@@ -11,7 +11,7 @@ const Landing = () => {
   return (
     <section className="row landing__wrapper" id="landing-section">
       <div className="col-md-6 landing__content">
- <h1>HackerSpree</h1>
+ <h1 className="landing_heading">HackerSpree</h1>
 
         <span className="landing__date">
           <i className="fas fa-calendar-alt"></i> From August, 2020
