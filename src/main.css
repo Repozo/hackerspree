@@ -68,19 +68,7 @@ main {
   color: var(--text-tertiary);
 }
 
-/* Mobile Screens */
-@media only screen and (max-width: 600px) {
-  main {
-    margin-left: 0;
-    padding-bottom: 2.5rem;
-  }
 
-  .section__header {
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    /* text-align: center; */
-  }
-}
 
 section {
   padding: 2rem 0;
@@ -102,8 +90,8 @@ section {
 .dmcheck {
   -webkit-appearance: none;
   position: relative;
-  width: 6vw;
-  height: 3vw;
+  width: 4vw;
+  height: 2vw;
   background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
   background-size: cover;
   border-radius: 50px;
@@ -117,8 +105,8 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  height: 3vw;
-  width: 3vw;
+  height: 2vw;
+  width: 2vw;
   background-color: navy;
   border-radius: 50px;
   transition: all .9s;
@@ -139,6 +127,38 @@ section {
 .toggle-btn
 {
 position: absolute;
-top: 0;
+top: 1vw;
 right: 0;
+}
+/* Mobile Screens */
+@media only screen and (max-width: 600px) {
+  main {
+    margin-left: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .section__header {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    /* text-align: center; */
+  }
+  .dmcheck {
+
+    width: 30px;
+    height: 15px;
+  
+  }
+  
+  .dmcheck:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: navy;
+    border-radius: 50px;
+    transition: all .9s;
+    background-color: #F7CA33;
+  }
 }
