@@ -15,6 +15,12 @@ body.dark-mode .about__section {
 .typed-cursor {
   font-size: 2rem;
   margin: 0 0.5rem;
+
+}
+body.dark-mode .typed-cursor {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color:white;
 }
 .about__content {
   display: flex;
