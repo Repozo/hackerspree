@@ -13,9 +13,9 @@ const About = () => {
 		var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 		var anotherRandomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 		var randomStrokeWidth = Math.floor(Math.random() * 8) + 1;
-		console.log(svg);
+		
 		[].forEach.call(svg.querySelectorAll('.svg-line-drawing .stroke'), function (element) {
-			console.log(randomStrokeWidth);
+			
 			element.setAttribute('style', 'stroke:' + randomColor + ';stroke-width: ' + randomStrokeWidth + ';');
 		});
 		[].forEach.call(svg.querySelectorAll('.svg-line-drawing .stroke-alt'), function (element) {
