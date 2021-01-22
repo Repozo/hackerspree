@@ -10,13 +10,13 @@ const About = () => {
 
 	function changeSvgStyle () {
 		var svg = document.getElementById('svg-animation-example');
-		var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+		var randomColor = ['#f51111','#0b0fe9','#f5f111'];
 		var anotherRandomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-		var randomStrokeWidth = Math.floor(Math.random() * 8) + 1;
-		
+		var randomStrokeWidth = Math.floor(Math.random() * 4) + 3;
+		var x = Math.floor((Math.random() *3));
 		[].forEach.call(svg.querySelectorAll('.svg-line-drawing .stroke'), function (element) {
 			
-			element.setAttribute('style', 'stroke:' + randomColor + ';stroke-width: ' + randomStrokeWidth + ';');
+			element.setAttribute('style', 'stroke:' + randomColor[x] + ';stroke-width: ' + randomStrokeWidth + ';');
 		});
 		[].forEach.call(svg.querySelectorAll('.svg-line-drawing .stroke-alt'), function (element) {
 			element.setAttribute('style', 'stroke:' + anotherRandomColor + ';stroke-width: ' + randomStrokeWidth + ';');
