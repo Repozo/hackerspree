@@ -15,7 +15,7 @@
   }
   .to_do
   {
-      height:100%;
+      height:auto;
       background-color: white;
       width:100%;
 
@@ -39,7 +39,7 @@
   }
   .to_do_head2
   {
-      font-size: 6vw;
+      font-size: 4vw;
       color:#f2f6f7;
       text-align: center;
       font-weight: 400;
@@ -92,7 +92,7 @@
     flex-wrap: wrap;
     padding: 0;
     margin: 10vw;
-    margin-top: 5vw;
+    margin-top: 2vw;
     
   }
   
@@ -324,13 +324,13 @@ display:none;
       flex: 1 1 auto;
       flex-direction: column;
       padding: 1rem;
-      line-height: 1.5em;
+      line-height: 1.1em;
       font-size: 1.5vw;
       color: #070707;
     }
   
     .card-title {
-      font-size: 3vw;
+      font-size: 2.5vw;
       line-height: 1.1em;
       color: #e946cb;
       margin-bottom: 0.2em;
