@@ -3,6 +3,7 @@ import "./styles/index.css";
 import Lottie from "lottie-react-web";
 import animation from "./lottie.json";
 import RegisterModal from "./components/register-modal";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   const [isModalOpen, setisModalOpen] = useState(false);
@@ -24,9 +25,9 @@ const Landing = () => {
         </div>
 
         <div className="landing__actions">
-          <a href="#" target="_blank" rel="noopener">
-            <button className="secondary__btn">Something</button>
-          </a>
+          <Link to="/know-about-hackathon">
+            <button className="secondary__btn">Know About Hackathon</button>
+          </Link>
 
           <button
             className="primary__btn"
