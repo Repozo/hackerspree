@@ -8,7 +8,7 @@ const Sidebar = () => {
         <li className="sidebar__item  sidebar__logo">
           <a href="#landing-section" className="sidebar__item__link">
             <img
-              src="favicon.png"
+              src="logo.png"
               alt="Hackerspree"
               className="sidebar__logo__img"
             />
