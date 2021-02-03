@@ -9,14 +9,14 @@ const Winnerslist = [
     description:
       "Frontend Engineer",
       a_description:"Problem Solver ",
-      add_description:"10+ Hackathons Experience",
+      add_description:"15+ Hackathons Experience",
     linkedin: "https://www.linkedin.com/in/atishay-srivastava-7a1140174/",
     github:"https://github.com/xAtishayx/",
     image: "images/winners/atishay.jpg",
   },
   {
     name: "Ayan Goyal",
-    title: "DSC Technical Coordinator",
+    title: "DSC Coordinator",
     description:
       "Flutter Developer",
       a_description:"AR/VR enthusiast",
