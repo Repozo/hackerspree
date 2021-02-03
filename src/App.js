@@ -19,6 +19,7 @@ import Faq from "./sections/faq";
 import Discord from "./sections/discord";
 import SponsorCard from "./sections/sponsorcard";
 import Footer from "./sections/footer";
+import Know from "./sections/knowabout";
 
 function App() {
   return (
@@ -28,7 +29,12 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-
+        <Route
+            exact
+            path="/know-about-hackathon"
+             >
+               <Know/>
+               </Route>
         <Redirect from="*" to="/" />
       </Switch>
     </Router>

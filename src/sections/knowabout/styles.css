@@ -1,0 +1,536 @@
+
+.simple-trans-main > div {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-size: 25em;
+    will-change: transform, opacity;
+    text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+  }
+  .to_do
+  {
+      height:100%;
+      background-color: white;
+      width:100%;
+
+  }
+  .to_do_logo
+  {
+      height:10vw;
+      font-size: 10px;
+      color:black;
+      position: relative;
+      left:85vw;
+   
+   
+  }
+  .to_do_head1
+  {
+      font-size: 8vw;
+      color:#f8f5f6;
+      text-align: center;
+      font-weight: 600;
+  }
+  .to_do_head2
+  {
+      font-size: 4vw;
+      color:#f2f6f7;
+      text-align: center;
+      font-weight: 400;
+  }
+  .to_do_head3
+  {
+      font-size: 6vw;
+      color:#51c2d5;
+      text-align: center;
+      font-weight: 400;
+  }
+  .to_do_head4
+  {
+      font-size: 6vw;
+      color:#f3f3f3;
+      text-align: center;
+      font-weight: 400;
+  }
+  .to_do_content
+  {
+      font-size: 1.5vw;
+      color: black;
+      font-weight: 450;
+      margin-top: 4vw;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      text-align: center;
+  }
+  .to_do_content1
+  {
+      font-size: 2.5vw;
+      color: #fdbc90;
+      font-weight: 450;
+      margin-top: 4vw;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      text-align: center;
+  }
+  
+  .content4
+  {
+    color:#cdfffc;
+  }
+  .container {
+    display: flex;
+    -webkit-display: box;
+    -moz-display: box;
+    -ms-display: flexbox;
+    -webkit-display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10vw;
+    margin-top: 2vw;
+    
+  }
+  
+
+  .container3 {
+    perspective: 660px; /*This gives  perspective */
+    width: 60vw;
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 70px;
+    padding-right: 30px;
+  
+  }
+  
+  .card {
+    color: #555;
+    text-shadow: 1px 3px 3px rgba(255, 255, 255, 0.7);
+    width: 230px;
+    height: 200px;
+    float: left;
+    padding: 20px;
+    margin: 15px;
+    margin-right: -32px;
+    background: #eee;
+    background-image: linear-gradient(110deg, #ddd, #888);
+    opacity: 0.9;
+    backdrop-filter: blur(5px);
+  
+    /* Animation attributes */
+    animation-name: turn-animation; /* any name what you give */
+    animation-duration: 6000ms; /* length of one animation cycle*/
+    animation-iteration-count: infinite; /* repeats forever */
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1); /* ease-in-out */
+  }
+  
+  /* Animation keyframes */
+  @keyframes turn-animation {
+    0%,
+    100% {
+      /*Card position at start and end */
+      transform: rotate3d(0, 1, 0, 10deg);
+    }
+    /* Experiment with these numbers at 50% -> */
+    50% {
+      transform: rotate3d(0, 1, -0.2, 45deg);
+    }
+  }
+  
+  /* THE COLORED CARDS */
+  .top_card {
+    background-image: linear-gradient(-70deg, #09c, #5f9);
+  }
+  
+  .middle_card {
+    background-image: linear-gradient(-70deg, #505, #f68);
+    color: #000;
+    text-shadow: -2px -2px 3px rgba(255, 255, 255, 0.7);
+  }
+  
+  .bottom_card {
+    background-image: linear-gradient(-70deg, #03a, #c6f);
+  
+    font-size: 1.3em;
+    text-shadow: 1px 3px 3px rgba(255, 255, 255, 0.7);
+  }
+  
+  /* ALL CARD HOVER */
+  .card:hover {
+    opacity: 0.7;
+    background-image: linear-gradient(-70deg, #627, #9a9);
+    color: #223;
+  }
+  
+  .top_card:hover {
+    background-image: linear-gradient(-70deg, #90c, #5f9);
+  }
+  
+  .middle_card:hover {
+    background-image: linear-gradient(-70deg, #90c, #5f9);
+  }
+  
+  .bottom_card:hover {
+    background-image: linear-gradient(-70deg, #90c, #5f9);
+  }
+  
+  
+#timeline {
+  display: flex;
+  background-color: #072c49;
+  margin-top: 7vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+    .tl-item:hover {
+      width: 33.3333%;
+    }
+  
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 33.333%;
+
+  min-height:15vw;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+  
+}
+  .tl-item:before, .tl-item:after {
+    transform: translate3d(0, 0, 0);
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+  }
+.tl-item:after {
+    background: transparentize(#031625, 0.15);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+.tl-item:before {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 75%);
+    z-index: 1;
+    opacity: 0;
+    transform: translate3d(0, 0, 0) translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+ .tl-item:hover {
+    width: 30% !important;
+  
+  }
+ .tl-item:hover:after {
+      opacity: 0;
+    }
+ .tl-item:hover:before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) translateY(0);
+      transition: opacity 1s ease, transform 1s ease 0.25s;
+    }
+ .tl-item:hover .tl-content {
+      opacity: 1;
+      transform: translateY(0);
+      transition: all 0.75s ease 0.5s;
+    }
+   
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 25%;
+  opacity: 0;
+
+  
+}
+  .f3 {
+    font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    color: #1779cf;
+    font-size: 1.44rem;
+    font-weight: normal;
+  }
+
+
+.tl-year {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+ 
+
+
+}
+.tl-item:hover .f2 
+{
+display:none;
+}
+
+.f2
+{
+    
+  font-size: 10vw;
+  height: 7vw;
+}
+
+  .cards {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    
+   
+    @media(min-width: 40rem) {
+      width: 50%;
+    }
+    @media(min-width: 56rem) {
+      width: 33.3%;
+    }
+  }
+    .card-item {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+      overflow: hidden;
+      transition: transform 0.5s;
+      -webkit-transition: transform 0.5s;
+      background-color:#73e9fd;
+      z-index: 9999;
+      
+    }
+  .card-item:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+       
+      }
+  
+  
+    .card-info {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      padding: 1rem;
+      line-height: 1.1em;
+      font-size: 1.5vw;
+      color: #070707;
+    }
+  
+    .card-title {
+      font-size: 2.5vw;
+      line-height: 1.1em;
+      color: #e946cb;
+      margin-bottom: 0.2em;
+    }
+
+
+
+    .area1{
+      background: #4e54c8;  
+      background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+      width: 100%;
+      height:100%;
+      
+     
+  }
+  .area2{
+    background: #ec4646;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100%;
+    
+   
+}
+.area3{
+  background: #031625;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100%;
+  
+ 
+}
+.area4{
+  background: #fa8aa4;  
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+  width: 100%;
+  height:100%;
+  
+ 
+}
+  
+  .circles{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+  }
+  
+  .circles li{
+      position: absolute;
+      display: block;
+      list-style: none;
+      width: 20px;
+      height: 20px;
+      background: rgba(247, 243, 243, 0.2);
+      animation: animate 25s linear infinite;
+      bottom: -150px;
+      
+  }
+  .circle1
+  {
+    background: rgba(240, 234, 234, 0.2)!important;
+  }
+  .circle3 
+  {
+    background: white!important;
+  }
+  .ciecle4
+  {
+    background: #ff884b!important;
+  }
+  .circles li:nth-child(1){
+      left: 25%;
+      width: 80px;
+      height: 80px;
+      animation-delay: 0s;
+  }
+  
+  
+  .circles li:nth-child(2){
+      left: 10%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 2s;
+      animation-duration: 12s;
+  }
+  
+  .circles li:nth-child(3){
+      left: 70%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 4s;
+  }
+  
+  .circles li:nth-child(4){
+      left: 40%;
+      width: 60px;
+      height: 60px;
+      animation-delay: 0s;
+      animation-duration: 18s;
+  }
+  
+  .circles li:nth-child(5){
+      left: 65%;
+      width: 20px;
+      height: 20px;
+      animation-delay: 0s;
+  }
+  
+  .circles li:nth-child(6){
+      left: 75%;
+      width: 110px;
+      height: 110px;
+      animation-delay: 3s;
+  }
+  
+  .circles li:nth-child(7){
+      left: 35%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 7s;
+  }
+  
+  .circles li:nth-child(8){
+      left: 50%;
+      width: 25px;
+      height: 25px;
+      animation-delay: 15s;
+      animation-duration: 45s;
+  }
+  
+  .circles li:nth-child(9){
+      left: 20%;
+      width: 15px;
+      height: 15px;
+      animation-delay: 2s;
+      animation-duration: 35s;
+  }
+  
+  .circles li:nth-child(10){
+      left: 85%;
+      width: 150px;
+      height: 150px;
+      animation-delay: 0s;
+      animation-duration: 11s;
+  }
+  
+  
+  
+  @keyframes animate {
+  
+      0%{
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+          border-radius: 0;
+      }
+  
+      100%{
+          transform: translateY(-1000px) rotate(720deg);
+          opacity: 0;
+          border-radius: 50%;
+      }
+  
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .to_do_logo
+  {
+    height:15vw;
+   
+  }
+  .to_do_head
+  {
+      font-size: 14vw;
+   margin:1vw;
+  }
+  .to_do_content
+  {
+      font-size: 5vw;
+      
+      
+  }
+  }
+  @media screen and (max-width: 500px) {
+    .to_do_logo
+  {
+      height:20vw;
+     left:70vw;
+   
+  }
+  .to_do_head
+  {
+      font-size: 14vw;
+     
+  }
+  .to_do_content
+  {
+      font-size: 6vw;
+      
+      
+  }
+  }
